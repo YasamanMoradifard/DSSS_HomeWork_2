@@ -38,7 +38,7 @@ def Operation_on_numbers(num1, num2, operation):
     """
     promblem = f"{num1} {operation} {num2}"
     if operation == '+': Answer = num1 + num2 # add
-    elif operation == '-': Answer = num1 - num2 # subtract
+    elif operation == '-': Answer = num1 - num2 # substraction
     else: Answer = num1 * num2 # multiplication
 
     return promblem, Answer
