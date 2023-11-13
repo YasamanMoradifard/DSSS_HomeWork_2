@@ -5,8 +5,8 @@ import random
     2- functions name (Done)
     3- add comment (Done)
     4- Docstring (Done)
-    5- Error handling 
-    6- use 'zip'
+    5- Error handling (Done)
+    6- use 'zip' 
     7- Modular (Done)
 """
 def Random_number(min, max):
@@ -73,7 +73,6 @@ def math_quiz():
         PROBLEM, ANSWER = Operation_on_numbers(num1, num2, random_opearation) # problem generation
         print(f"\nQuestion: {PROBLEM}")
         useranswer = input("Your answer: ") # user's answer
-        #useranswer = int(useranswer)
 
         if int(useranswer) == ANSWER:
             print("Correct! You earned a point.")
