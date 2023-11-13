@@ -1,6 +1,6 @@
 import random
 
-
+# just a test comment
 def function_A(min, max):
     """
     Random integer.
