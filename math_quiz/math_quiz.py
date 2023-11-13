@@ -1,14 +1,5 @@
 import random
 
-""" Modifications:
-    1- Arguments name (Done)
-    2- functions name (Done)
-    3- add comment (Done)
-    4- Docstring (Done)
-    5- Error handling (Done)
-    6- use 'zip' 
-    7- Modular (Done)
-"""
 def Random_number(min, max):
     """Return an inteter between min & max randomly
 
