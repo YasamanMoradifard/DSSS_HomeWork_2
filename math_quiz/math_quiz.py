@@ -45,12 +45,6 @@ def Operation_on_numbers(num1, num2, operation):
 
 
 def math_quiz():
-    """Math quiz: 
-    1st" generates the mathematical problem
-    2nd: ask user for the answer
-    3rd: correct answer will gain 1 point
-    4th: the game plays in 3 round
-    """
 
     score = 0
     TotlaRound = 3
@@ -59,9 +53,11 @@ def math_quiz():
     print("You will be presented with math problems, and you need to provide the correct answers.")
 
     for i in range(TotlaRound):
-        num1 = Random_number(1, 10); num2 = Random_number(1, 5); random_opearation = Operation() # numbers and operation generation
-
-        PROBLEM, ANSWER = Operation_on_numbers(num1, num2, random_opearation) # problem generation
+        # numbers and operation generation
+        num1 = Random_number(1, 10); num2 = Random_number(1, 5); random_opearation = Operation() 
+        
+        # problem generation
+        PROBLEM, ANSWER = Operation_on_numbers(num1, num2, random_opearation) 
         print(f"\nQuestion: {PROBLEM}")
         useranswer = input("Your answer: ") # user's answer
 
