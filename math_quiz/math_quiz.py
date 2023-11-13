@@ -19,6 +19,8 @@ def Random_number(min, max):
     Returns:
         int: random number between min & max
     """
+    if not isinstance(min, int) or not isinstance(max, int):
+        raise TypeError("Arguments 'min' and 'max' must be integers.")
     return random.randint(min, max)
 
 
@@ -66,7 +68,7 @@ def math_quiz():
     print("You will be presented with math problems, and you need to provide the correct answers.")
 
     for i in range(TotlaRound):
-        num1 = Random_number(1, 10); num2 = Random_number(1, 5.5); random_opearation = Operation() # numbers and operation generation
+        num1 = Random_number(1, 10); num2 = Random_number(1, 5); random_opearation = Operation() # numbers and operation generation
 
         PROBLEM, ANSWER = Operation_on_numbers(num1, num2, random_opearation) # problem generation
         print(f"\nQuestion: {PROBLEM}")
