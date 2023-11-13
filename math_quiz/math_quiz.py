@@ -1,6 +1,6 @@
 import random
 
-# just a test comment
+# just a test comment I want to see the comment
 def function_A(min, max):
     """
     Random integer.
